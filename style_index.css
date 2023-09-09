@@ -1,14 +1,23 @@
 * {
     box-sizing: border-box;
-  }
-  
+}
   html{
     font-size: 10px;
   }
-
   body {
     margin: 0;
     background: #f7f8fd;
     color: #0b1f66;
     font-family: 'Noto Sans KR', sans-serif;
+  }
+    
+  /* 상단 바 css */
+  header{
+    display: flex;
+    
+  }
+
+  /*  */
+  .nav{
+    
   }
