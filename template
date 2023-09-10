@@ -1,19 +1,31 @@
 <!-- 시리즈 템플릿 -->
 
 <article class="series">
+
     <h3 class="series title">
-        &#127817; IT 지식 공부
+        <!-- 시리즈 큰 제목 -->
     </h3>
-    <div>
-        자료구조와 알고리즘 정리.<br>
-        파이썬으로 푼 백준 문제를 정리하고 올림.<br>
-    </div>                    
-    <ul>
-        <li><a href="#">알고리즘 기본 정리 .1</a></li>
-        <li><a href="#">알고리즘 기본 정리 .2</a></li>
-        <li><a href="#">알고리즘 기본 정리 .3</a></li>
-    </ul>
+
+    <div class="series summary">
+        <!-- 시리즈를 소개해주세요 -->
+        <!-- 시리즈를 소개해주세요 -->
+    </div>  
+          
+    <article class = "series article-link">
+        <details>
+            <summary> 1주차. HTML, CSS의 기본</summary>
+            <ul>
+                <li><a href="#">1. html</a></li>
+            </ul>
+        </details>
+        
+        <ul>            
+            <li><a href="#">css의 cascading이란</a></li>
+            <li><a href="#">Position의 속성값과 각 특성</a></li>
+        </ul>
+    </article>
 </article>
+
 <div class="spacing"></div>
 
 

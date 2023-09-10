@@ -42,3 +42,12 @@
 .spacing{
     border: 1px solid gray;
 }
+
+.series.summary{
+  color: gray;
+  font-size: 1.5rem;
+}
+
+details{
+  padding: 1rem 0 0;
+}
