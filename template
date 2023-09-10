@@ -1,0 +1,21 @@
+<!-- 시리즈 템플릿 -->
+
+<article class="series">
+    <h3 class="series title">
+        &#127817; IT 지식 공부
+    </h3>
+    <div>
+        자료구조와 알고리즘 정리.<br>
+        파이썬으로 푼 백준 문제를 정리하고 올림.<br>
+    </div>                    
+    <ul>
+        <li><a href="#">알고리즘 기본 정리 .1</a></li>
+        <li><a href="#">알고리즘 기본 정리 .2</a></li>
+        <li><a href="#">알고리즘 기본 정리 .3</a></li>
+    </ul>
+</article>
+<div class="spacing"></div>
+
+
+
+<!-- 글 템플릿 -->

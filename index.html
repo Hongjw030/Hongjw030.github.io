@@ -1,26 +1,90 @@
 <!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Hongjw030 block</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+          href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&family=Titillium+Web:wght@300;600&display=swap"
+          rel="stylesheet">        
+       <link rel="stylesheet" href="style.css">
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <title>Hongjw030.blog</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&family=Titillium+Web:wght@300;600&display=swap"
-        rel="stylesheet">        
-    <script src="/common/includeHTML.js"></script>
-</head>
+    <body>
+        <!-- 버튼 목록 -->
+        <div class="header">
+            <div class="homebutton">
+                <a href="index.html"><img src="images/category.svg"></a>
+            </div>
+            <div class="homebutton">
+                <a href="https://github.com/Hongjw030/"><img src="images/git.svg"></a>
+            </div>
+        </div>
 
-<body>
-    <nav include-html="/common/sidebar.html"></nav>
-    <header include-html="/common/header.html"></header>
-    <article>
-        <h2>최신 글 목록</h2>
-    </article>
-</body>
+        <!-- 자기 소개 -->
+        <div class="series-list">
+            <h2>홍장군의 블로그...</h2>
+            <p style="font-size: 1.5rem;">
+                프론트 공부 중인 초보 개발자!<br>
+                배우고 소통하는 것을 좋아해요.
+            </p>
+        </div>
 
-<script>
-    includeHTML();
-</script>
+        <!-- 시리즈 작성 목록 -->
+        <section class="series-list">
 
+            <!-- 시리즈 1. 프론트 공부 -->
+            <article class="series">
+                <h3 class="series title">
+                    &#127823; 프론트 공부
+                </h3>
+                <div>
+                    프론트를 공부한 기록.<br>
+                    파이썬으로 푼 백준 문제를 정리하고 올림.<br>
+                </div>                    
+                <ul>
+                    <li><a href="#">html 정리 .1</a></li>
+                    <li><a href="#">css 정리 .2</a></li>
+                    <li><a href="#">css 레이아웃 .3</a></li>
+                </ul>
+            </article>
+            <div class="spacing"></div>
+
+            <!-- 시리즈 2. 알고리즘 -->
+            <article class="series">
+                <h3 class="series title">
+                    &#127844; 알고리즘 공부
+                </h3>
+                <div>
+                    자료구조와 알고리즘 정리.<br>
+                    파이썬으로 푼 백준 문제를 정리하고 올림.<br>
+                </div>                    
+                <ul>
+                    <li><a href="#">알고리즘 기본 정리 .1</a></li>
+                    <li><a href="#">알고리즘 기본 정리 .2</a></li>
+                    <li><a href="#">알고리즘 기본 정리 .3</a></li>
+                </ul>
+            </article>
+            <div class="spacing"></div>
+
+            <!-- 시리즈 3. IT 지식 공부 -->
+            <article class="series">
+                <h3 class="series title">
+                    &#127817; IT 지식 공부
+                </h3>
+                <div>
+                    자료구조와 알고리즘 정리.<br>
+                    파이썬으로 푼 백준 문제를 정리하고 올림.<br>
+                </div>                    
+                <ul>
+                    <li><a href="#">css의 cascading이란</a></li>
+                    <li><a href="#">Position의 속성값과 각 특성</a></li>
+                </ul>
+            </article>
+            <div class="spacing"></div>
+
+
+        </section>
+    </body>
 </html>

@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+}
+  html{
+    font-size: 10px;
+  }
+  body {
+    font-size:2rem;
+    margin: 0;
+    background: #f7f8fd;
+    font-family: 'Noto Sans KR', sans-serif;
+  }
+  a{
+    text-decoration: none;
+  }
+  a:visited, a:link{
+    color: gray;
+  }
+
+  .header{
+    position: fixed;
+    right:0px;
+  }
+
+  .homebutton{
+    border-radius: 50%;
+    margin: 3rem;
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid gray;
+  }
+  
+
+  /* 시리즈 정리 */
+.series-list{
+    padding: 1rem 4rem;
+}
+
+.spacing{
+    border: 1px solid gray;
+}
