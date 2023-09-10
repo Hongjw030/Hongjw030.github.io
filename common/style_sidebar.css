@@ -13,16 +13,19 @@
   a{
     text-decoration: none;
   }
-  main{
-    margin-left: 20%;
+  a:hover{
+    color:coral;
   }
+.main-div{
+  display: flex;
+  gap:1rem;
+}
 
   /* 사이드 바 */
   .side-bar{
-    position: fi;
+    position: fixed;
     height:100%;
-    min-width: 20rem;
-    width: 20%;
+    width: 20rem;
     background-color: rgb(82, 73, 106);
     padding: 3rem 3rem;
     display: flex;
@@ -101,9 +104,15 @@
   background-color: white;
 }
 
-/*  */
+.header{
+  padding:3rem 5rem;
+  margin: 0 auto;
+}
+.home-logo{
+  width: 100%;
+  border-bottom: 1px solid rgb(82, 73, 106);
+}
 
-.main-div{
-  display: flex;
-  gap:3rem
+.home-logo.home, a:link{
+  color: rgb(82, 73, 106);
 }
