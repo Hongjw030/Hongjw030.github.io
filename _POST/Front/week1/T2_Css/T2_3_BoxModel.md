@@ -1,5 +1,5 @@
 # 🍩 CSS 기본 개념 🍩
-#### Week1 html css 기초 / Topic 2 CSS 핵심 / 2. css 속성
+#### Week1 html css 기초 / Topic 2 CSS 핵심 / 3. box model
 
 >목차 
 >>
