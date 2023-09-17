@@ -1,4 +1,4 @@
-# 🍩 CSS 기본 개념 🍩
+# 🍑 Box Model 🍑
 #### Week1 html css 기초 / Topic 2 CSS 핵심 / 3. box model
 
 >목차 
