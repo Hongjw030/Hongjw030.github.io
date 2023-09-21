@@ -6,7 +6,7 @@
 [2. 배열 메소드](#2-배열-메소드)<br>
 [3. for of 반복문](#3-for-of-반복문)<br>
 [4. 다차원 배열](#4-다차원-배열)<br>
-
+[5. 객체와 배열 차이 정리](#5-배열과-객체-차이-정리)<br>
 
 
 
@@ -143,3 +143,46 @@ let twoDimension = [
 ```
 
 값 하나하나의 의미가 중요하다면 객체를 활용하고, 의미가 아니라 위치나 순서가 중요하다면 배열을 쓰자. 
+
+
+
+## 5. 배열과 객체 차이 정리
+
+### 객체
+* 중괄호로 만든다.
+* 함수들을 객체 속성 값으로 넣을 수 있다.
+* for in 문을 쓴다.
+    * for in 문이니까 >> 속성 유무 찾을 때엔 in을 쓰자!
+* 삭제할 때엔 delete
+* length 함수 없다!~
+```js
+let object = {
+    A:'a';
+};
+
+let greetings = {
+    sayHello: function(name){console.log(name);},
+    sayHi: function(name){console.log(name);},
+    sayBye: function(name){console.log(name);}
+};
+
+for (let key in codeit){
+    console.log(key);
+    console.log(codeit[key]);
+}if (key in object){}
+
+delete object['A'];
+```
+
+
+### 배열
+* 대괄호로 만든다.
+* array.splice, pop, shift, unshift, push, inclues
+* for of 문을 쓴다.
+* array.length 혹은 array['length'] 로 길이 파악.
+```js
+let array = [
+    a, b, c
+]
+```
+
