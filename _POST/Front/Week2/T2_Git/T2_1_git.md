@@ -1,5 +1,5 @@
 # 🧅 깃 🧅
-#### Week2 unix git 기초 / Topic 2 실용적 유닉스 커맨드 / 1. 깃
+#### Week2 unix git 기초 / Topic 2 깃 / 1. 깃
 
 
 <br><br>
