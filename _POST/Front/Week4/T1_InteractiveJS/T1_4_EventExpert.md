@@ -514,15 +514,76 @@ function sendText(e){
 <br>
 
 ## 3. input 태그 다루기
+checkbox, text, radio 등 여러 input이 있고 그 인풋에 관련된 여러 이벤트가 있다.
 
 
+1. focus와 관련된 이벤트
+* 사용자의 키보드나 마우스 동작에 반응하는 특징. 
+* 일반 div 태그같은 곳에는 없는 이벤트.
 
+```js
+// focusin: 요소에 포커스 되었을 때
+// focusout: 요소에 포커스 빠져나갈 때
+// focus: 요소에 포커스 될 때 (버블링 없다!!)
+// blur: 요소에 포커스 빠져나갈 때 (버블링 없다!!)
+
+const el = document.querySelector('#username');
+function printEventType(e){
+	console.log("type: ", e.type);
+	console.log("target: ", e.target);
+	console.log("--------------");
+}
+
+el.addEventListener('focusin', printEventType);
+```
+
+2. input 이벤트
+* 값을 입력하는 순간 발생하는 이벤트 
+* 값이 입력돼야 발생하므로 esc 같은 특수키에선 발생 안한다!! 이게 키보드 이벤트와의 차이점. 
+```js
+
+```
+
+3. change 이벤트
+* 요소의 값이 변했을 때 발생.
+* 이벤트 시작 전 값과 이벤트 완료됐을 때의 값 사이에 차이가 있을 때만 발생한다!! 
+* 기본적으로는 그냥 input 이벤트만 발생하다가 focus out이 되기 직전 빠져나갈 때 입력이 완료됐다고 인식되면서 change 이벤트 발생.
+* 엔터를 눌러서 focus out 안하고 change 이벤트 발생시킬 수도 있다. 
 
 <br>
 
 ## 4. 스크롤 이벤트
 
+스크롤을 내릴 때 발생한다.
 
+scrollY 속성을 통해 얼만큼 스크롤 내렸는지 알 수 있다. 이걸 써서 어디 쯤 왔을 때 광고를 띄워준다든가 하는 식으로 구현할 수도 있다. 
+```js
+// Scroll 이벤트
+let lastScrollY = 0;
 
+function onSroll() {
+  const nav = document.querySelector('#nav');
+  const toTop = document.querySelector('#to-top');
+  const STANDARD = 30;
+  
+  if (window.scrollY > STANDARD) { // 스크롤이 30px을 넘었을 때
+    nav.classList.add('shadow');
+    toTop.classList.add('show');
+  } else { // 스크롤이 30px을 넘지 않을 때
+    nav.classList.remove('shadow');
+    toTop.classList.remove('show');
+  } 
+
+	if (window.scrollY > lastScrollY) { // 스크롤 방향이 아랫쪽 일 때
+    nav.classList.add('lift-up');
+  } else { // 스크롤 방향이 윗쪽 일 때
+    nav.classList.remove('lift-up');
+  }
+
+  lastScrollY = window.scrollY;
+}
+
+window.addEventListener('scroll', onSroll);
+```
 
 <br>
